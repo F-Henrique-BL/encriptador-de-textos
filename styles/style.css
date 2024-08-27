@@ -1,0 +1,267 @@
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.merriweather-regular-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+body {
+    background: #556B2F;
+}
+
+/*Header*/
+header {
+    background-color: #556B2F;
+}
+
+.header {
+    background: #556B2F;
+    width: 90%;
+    margin: auto;
+}
+
+.header__logo {
+    margin-top: 40px;
+}
+ /*Main*/  
+.main { 
+    background-color: #8FBC8F;
+    border: 2px solid gold;
+    width: 80.5%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    min-height: calc(100vh - 91px - 40px);
+    align-items: end;
+
+
+}
+/*lado Esquerdo*/
+.esquerda {
+    background-color: #8FBC8F;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.digite__texto {
+    width: 80%;
+    font-size: 32px;
+    color: black;
+    background: none;
+    outline: none;
+    border: none;
+    resize: none;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.digite__texto::placeholder {
+    color: #A02334;
+    
+}
+
+.esquerda__footer {
+    display: flex;
+    background-color: #8FBC8F;
+    font-size: 32px;   
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.informacao {   
+    color: rgb(7, 7, 4);
+    font-size: 16px;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+}
+
+.esquerda__botao {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+   
+            
+}
+
+.botao__criptografar {
+    max-width: 328px;
+    width: 100%;
+    height: 67px;
+    padding: 0 60px 0 60px;
+    border: 3px solid gold;
+    border-radius: 24px;
+    background-color: #A02334;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.botao__descriptografar {
+    max-width: 328px;
+    width: 100%;
+    height: 67px;
+    padding: 0 60px 0 60px;
+    border: 3px solid gold;
+    border-radius: 24px;
+    background-color: #FFEEAD;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+/*lado Direito*/
+.direita {
+    background-color: #A02334;
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    box-shadow: 0px 24px 32px -8px black;
+}
+
+.direita.ajustar{
+    justify-content: space-between;
+}
+
+.direita__imagem {
+    width: 100%;
+}
+
+.paragrafo__final {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #A02334;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.paragrafo__final.ajustar {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    border: none;
+    resize: none;
+    outline: none;
+    height: 80%;
+}
+
+.informacao__final {
+    color: gold;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.botao__copiar {    
+    max-width: 328px;
+    width: 100%;
+    height: 67px;
+    border: 3px solid gold;
+    border-radius: 24px;
+    background-color: #FFEEAD;
+    color: black;
+    font-size: 16px;
+    cursor:pointer;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: italic;
+                  
+}
+.oculto{
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;
+    }
+    .direita{
+        height: 100%;
+    }
+    .direita__imagem{
+        display: none;
+    }
+    .esquerda__botao{
+        justify-content: center;
+    }
+    .botao__criptografar{
+        width: 80%;
+
+    }
+    .botao__descriptografar{
+        width: 80%;
+
+    }
+    
+}
+
+@media  screen and (max-width: 500px) {
+    .main{
+        margin: auto 16px;
+    }
+    .esquerda__botao{
+        flex-wrap: wrap;
+    }
+    .botao__criptografar{
+        max-width: none;
+        width: 100%;
+
+    }
+    .botao__descriptografar{
+        max-width: none;
+        width: 100%;
+
+    }
+    
+}
+    
+.botao__criptografar:hover{
+    background-color: #7C00FE;
+    transition: background 1.5s;
+}
+.botao__descriptografar:hover {
+    background-color: #7C00FE;
+    transition: background 1.5s;
+}
+
+.botao__copiar:hover{
+    background-color: #7C00FE;
+    transition: background 1.5s;
+}
+
+
